@@ -93,15 +93,8 @@ app.patch('/todos/:id', (req, res) => {
         res.send({ todo });
     }).catch((err) => {
         res.status(400).send();
-    })
-
-
-
-
-
+    });
 });
-
-
 
 app.listen(port, () => {
     console.log(`Server started on port ${port}`);
